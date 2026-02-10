@@ -1,5 +1,4 @@
 use std::fmt;
-use std::fmt::Formatter;
 
 #[derive(Debug, Clone)]
 pub struct Note {
@@ -62,6 +61,22 @@ pub enum CodeTheme {
     Dark,
     Light,
     NoColor,
+}
+
+impl Default for RenderConfig {
+    fn default() -> Self {
+        Self {
+            color_enabled: true,
+            code_theme: CodeTheme::Dark,
+            compact_mode: false,
+        }
+    }
+}
+
+impl Default for CodeTheme {
+    fn default() -> Self {
+        Self::Dark
+    }
 }
 
 impl fmt::Display for Category {
