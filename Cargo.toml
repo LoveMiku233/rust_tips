@@ -1,0 +1,19 @@
+[package]
+name = "rust_tips"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 学习笔记集合 - 适合初学者的 Rust 技巧和示例"
+authors = ["LoveMiku233"]
+license = "MIT"
+
+[lib]
+name = "rust_tips"
+path = "src/lib.rs"
+
+[dependencies]
+
+[dev-dependencies]
+
+[[example]]
+name = "show_notes"
+path = "examples/show_notes.rs"
